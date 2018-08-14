@@ -98,20 +98,20 @@ function CreatePie() {
     for (var i = 0; i < myData.length; i++) {
         ctx.fillStyle = myColor[i];
         ctx.beginPath();
-        ctx.moveTo(160, 75);
-        ctx.arc(160, 75, 75, lastend, lastend +
+        ctx.moveTo(200, 100);
+        ctx.arc(200, 100, 75, lastend, lastend +
             (Math.PI * 2 * (myData[i] / myTotal)), false);
-        ctx.lineTo(160, 75);
+        ctx.lineTo(200, 100);
         ctx.fill();
         lastend += Math.PI * 2 * (myData[i] / myTotal);
-        ctx.arc(160, 75, 40, 0, Math.PI * 2);
+        ctx.arc(200, 100, 40, 0, Math.PI * 2);
     }
 
     // either change this to the background color, or use the global composition
     ctx.globalCompositeOperation = "destination-out";
     ctx.beginPath();
-    ctx.moveTo(160, 35);
-    ctx.arc(160, 75, 40, 0, Math.PI * 2);
+    ctx.moveTo(200, 60);
+    ctx.arc(200, 100, 40, 0, Math.PI * 2);
     ctx.fill();
     ctx.closePath();
     // if using the global composition method, make sure to change it back to default.
@@ -174,11 +174,11 @@ function CalculateTotalPrecents() {
     myData.push(failedPrec);
     myData.push(warnPrec);
 
-    myParsedData.push("Passed: " + allPassed + "(" + Math.round(passedPrec).toFixed(2) + "%)");
-    myParsedData.push("Failed: " + allFailed + "(" + Math.round(failedPrec).toFixed(2) + "%)");
-    myParsedData.push("Warnings: " + allWarns + "(" + Math.round(warnPrec).toFixed(2) + "%)");
+    myParsedData.push("Passed" + allPassed + " (" + Math.round(passedPrec).toFixed(2) + "%)");
+    myParsedData.push("Failed" + allFailed + " (" + Math.round(failedPrec).toFixed(2) + "%)");
+    myParsedData.push("Warning" + allWarns + " (" + Math.round(warnPrec).toFixed(2) + "%)");
 
-    document.getElementById('dataViewer').innerHTML = "<tr class='odd'><td><canvas id='canvas' width='240' height='150'>This text is displayed if your browser does not support HTML5 Canvas.</canvas></td></tr>";
+    document.getElementById('dataViewer').innerHTML = "<tr class='odd'><td><canvas id='canvas' width='300' height='188'>This text is displayed if your browser does not support HTML5 Canvas.</canvas></td></tr>";
     CreatePie();
     AddEventListener();
 }

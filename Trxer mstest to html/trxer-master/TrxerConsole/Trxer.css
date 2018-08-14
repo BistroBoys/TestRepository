@@ -58,7 +58,7 @@ address {
     height: 60px;
 }
 
-.statusBarPassed {
+.statusBarCompleted {
     background-color: #5bab5b;
 }
 
@@ -78,7 +78,7 @@ address {
     top: 15%;
 }
 
-.statusBarPassedInner {
+.statusBarCompletedInner {
     position: relative;
     background-color: #339833;
     width: 100%;
@@ -175,7 +175,7 @@ a:focus {
 .SummaryTable {
     width: auto;
     max-width: 407px;
-    float: left;
+    float: right;
     margin-right: 20px;
 }
 
@@ -186,7 +186,7 @@ a:focus {
 .DetailsTable {
     width: auto;
     max-width: 407px;
-    float: left;
+    float: right;
     margin-right: 20px;
     text-align: left;
     word-wrap: break-word;
@@ -194,6 +194,7 @@ a:focus {
 
 .StatusesTable {
     width: auto;
+    float: left;
 }
 
 #divToRefresh > div.SummaryDiv > table.DetailsTable > tbody > tr > td {
@@ -211,7 +212,7 @@ td.slowest {
 }
 
 #TotalTestsTable {
-    min-width: 400px;
+    min-width: 300px;
     width: auto;
     float: left;
     margin-right: 20px;
