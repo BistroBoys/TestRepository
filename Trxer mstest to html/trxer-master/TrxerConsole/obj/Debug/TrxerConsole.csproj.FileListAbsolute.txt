@@ -1,0 +1,7 @@
+C:\Users\al20021665\Desktop\Trxer mstest to html\trxer-master\TrxerConsole\bin\Debug\TrxerConsole.exe.config
+C:\Users\al20021665\Desktop\Trxer mstest to html\trxer-master\TrxerConsole\bin\Debug\TrxerConsole.exe
+C:\Users\al20021665\Desktop\Trxer mstest to html\trxer-master\TrxerConsole\bin\Debug\TrxerConsole.pdb
+C:\Users\al20021665\Desktop\Trxer mstest to html\trxer-master\TrxerConsole\obj\Debug\TrxerConsole.csprojAssemblyReference.cache
+C:\Users\al20021665\Desktop\Trxer mstest to html\trxer-master\TrxerConsole\obj\Debug\TrxerConsole.csproj.CoreCompileInputs.cache
+C:\Users\al20021665\Desktop\Trxer mstest to html\trxer-master\TrxerConsole\obj\Debug\TrxerConsole.exe
+C:\Users\al20021665\Desktop\Trxer mstest to html\trxer-master\TrxerConsole\obj\Debug\TrxerConsole.pdb
