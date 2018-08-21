@@ -43,7 +43,9 @@ namespace TrxerConsole
             XslCompiledTransform x = new XslCompiledTransform(true);
             x.Load(xsl, new XsltSettings(true, true), null);
             Console.WriteLine("Transforming...");
-            x.Transform(fileName, fileName + OUTPUT_FILE_EXT);
+            string htmlFileName = fileName.Replace(".trx", "");
+            htmlFileName += OUTPUT_FILE_EXT;
+            x.Transform(fileName, htmlFileName);
             Console.WriteLine("Done transforming xml into html");
         }
 

@@ -3,7 +3,7 @@ var myColor = ["#c0eec0", "#fed9d9", "#FBE87E"];//green,red,yellow
 var myStrokeColor = ["#7CCD7C", "#d42945", "#ffcc00"];
 
 function ShowHide(id1, id2, textOnHide, textOnShow) {
-    if (document.getElementById(id1).className == 'visibleRow') {
+    if (document.getElementById(id1).className === 'visibleRow') {
         document.getElementById(id2).innerHTML = textOnHide;
         document.getElementById(id1).className = 'hiddenRow';
     }
@@ -40,7 +40,7 @@ function updateFloatingImage(url) {
 function GetTotal() {
     var myTotal = 0;
     for (var j = 0; j < myData.length; j++) {
-        myTotal += (typeof myData[j] == 'number') ? myData[j] : 0;
+        myTotal += (typeof myData[j] === 'number') ? myData[j] : 0;
     }
     return myTotal;
 }
@@ -174,9 +174,9 @@ function CalculateTotalPrecents() {
     myData.push(failedPrec);
     myData.push(warnPrec);
 
-    myParsedData.push("Passed" + allPassed + " (" + Math.round(passedPrec).toFixed(2) + "%)");
-    myParsedData.push("Failed" + allFailed + " (" + Math.round(failedPrec).toFixed(2) + "%)");
-    myParsedData.push("Warning" + allWarns + " (" + Math.round(warnPrec).toFixed(2) + "%)");
+    myParsedData.push("Passed " + allPassed + " (" + Math.round(passedPrec).toFixed(2) + "%)");
+    myParsedData.push("Failed " + allFailed + " (" + Math.round(failedPrec).toFixed(2) + "%)");
+    myParsedData.push("Warning " + allWarns + " (" + Math.round(warnPrec).toFixed(2) + "%)");
 
     document.getElementById('dataViewer').innerHTML = "<tr class='odd'><td><canvas id='canvas' width='300' height='188'>This text is displayed if your browser does not support HTML5 Canvas.</canvas></td></tr>";
     CreatePie();

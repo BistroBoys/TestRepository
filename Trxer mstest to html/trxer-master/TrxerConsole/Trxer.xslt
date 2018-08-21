@@ -270,6 +270,7 @@
                           <th scope="col" class="TestsTable">Time</th>
                           <th scope="col" class="TestsTable" abbr="Status">Status</th>
                           <th scope="col" class="TestsTable" abbr="Test">Test</th>
+                          <th scope="col" class="TestsTable" abbr="Ticket Number">Ticket</th>
                           <th scope="col" class="TestsTable" abbr="Message">Message</th>
                           <th scope="col" class="TestsTable" abbr="Message">Owner</th>
                           <th scope="col" class="TestsTable" abbr="Exception">Duration</th>
@@ -339,6 +340,7 @@
                           <th scope="col" class="TestsTable">Time</th>
                           <th scope="col" class="TestsTable" abbr="Status">Status</th>
                           <th scope="col" class="TestsTable" abbr="Test">Test</th>
+                          <th scope="col" class="TestsTable" abbr="Ticket Number">Ticket</th>
                           <th scope="col" class="TestsTable" abbr="Message">Message</th>
                           <th scope="col" class="TestsTable" abbr="Message">Owner</th>
                           <th scope="col" class="TestsTable" abbr="Exception">Duration</th>
@@ -472,8 +474,10 @@
           <xsl:call-template name="imageExtractor">
             <xsl:with-param name="testId" select="$testId" />
           </xsl:call-template>
+        </td>
 
-
+        <td class="Ticket">
+          <xsl:value-of select="@ticketNumber"/>
         </td>
         <td class="Messages">
           <xsl:call-template name="debugInfo">
@@ -538,7 +542,6 @@
 
     </xsl:for-each>
   </xsl:template>
-
 
 
 
